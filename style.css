@@ -17,6 +17,8 @@
     z-index: 1;
 
 }
+
+
 .logo{
     font-size: 20px;
     color: white;
@@ -39,6 +41,9 @@
     padding-left: 5rem;
 
 
+}
+.menu_icon{
+    opacity: 0;
 }
 
 /* hero banner */
@@ -97,6 +102,7 @@ border: 2px solid wheat;
 .left_side h3 {
    font-size: 25px;
    padding-bottom: 30px;
+   text-align: center;
 
 }
 .left_side p{
@@ -184,4 +190,57 @@ height: 30px;
     gap: 15px;
     justify-content: center;
     padding-top: 30px;
+}
+@media screen and (max-width:420px) {
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       align-items: center;
+    }
+    .menu_icon{
+        opacity: 1;
+        font-size: 20px;
+        padding-right: 40px;
+    
+    }
+   
+    .nav-item li a{
+        display: none;
+    }
+    .hero-banner{
+        width: 100%;
+
+    }
+    .hero-banner .hero-text {
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+   
+    }
+    .innersection{
+width: 100%;
+display: block;
+flex-direction: column;
+text-align: center;
+    }
+    .left_side p{
+        width: 100%;
+    }
+    .right_side img{
+        width: 200px;
+    }
+    .inner_third{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        margin-top: 30px; 
+    }
+    
+    .card{
+display: block;
+flex-direction: column;
+
+    }
 }
